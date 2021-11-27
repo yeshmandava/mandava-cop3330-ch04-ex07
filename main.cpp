@@ -57,7 +57,7 @@ int main() {
 
 int loadNum()
 {
-    vector<string> strings = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
+    vector<string> nums = {"zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"};
     int num;
     if (cin >> num)
     {
@@ -68,11 +68,11 @@ int loadNum()
         return -1;
     }
     cin.clear();
-    string str;
-    cin >> str;
-    for (int i = 0; i < strings.size(); i++)
+    string numString;
+    cin >> numString;
+    for (int i = 0; i < nums.size(); i++)
     {
-        if (str == strings[i])
+        if (numString == nums[i])
         {
             return i;
         }
